@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="dFile" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../release/lib/dprint/dFile" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="../code/utility/FilePrint" />
+					<Add directory="../code/filed" />
+					<Add directory="../code/print" />
+					<Add directory="../code/tickd" />
+					<Add directory="../code/rely" />
+					<Add directory="../../release/inc" />
+					<Add directory="../../release/inc/c13/ctrl" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/DebugModule" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../code/filed/FiledIn.h" />
+		<Unit filename="../code/filed/filed.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../code/filed/filed.h" />
+		<Unit filename="../code/print/printd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../code/print/printd.h" />
+		<Unit filename="../code/rely/RelyBase.h" />
+		<Unit filename="../code/rely/RelyHci.h" />
+		<Unit filename="../code/tickd/tickd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../code/tickd/tickd.h" />
+		<Unit filename="../code/utility/FilePrint/FilePrint.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../code/utility/FilePrint/FilePrint.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

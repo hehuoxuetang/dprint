@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="dWinCsl" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../release/lib/dprint/dWinCsl" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add directory="../code/utility/WinPrintC" />
+					<Add directory="../code/console" />
+					<Add directory="../code/print" />
+					<Add directory="../code/tickd" />
+					<Add directory="../code/wind" />
+					<Add directory="../code/rely" />
+					<Add directory="../../release/inc" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/DebugModule" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../code/console/ConsoleIn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../code/console/ConsoleIn.h" />
+		<Unit filename="../code/console/CslCmd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../code/console/CslCmd.h" />
+		<Unit filename="../code/console/CslMenu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../code/console/CslMenu.h" />
+		<Unit filename="../code/print/printd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../code/print/printd.h" />
+		<Unit filename="../code/tickd/tickd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../code/tickd/tickd.h" />
+		<Unit filename="../code/utility/WinPrintC/WinPrintC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../code/utility/WinPrintC/WinPrintC.h" />
+		<Unit filename="../code/wind/WindIn.h" />
+		<Unit filename="../code/wind/wind.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../code/wind/wind.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

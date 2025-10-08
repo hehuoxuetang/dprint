@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="lib_proj/dWinCsl.cbp" />
+		<Project filename="demo_proj/WinCsl_App/WinCsl_App.cbp" />
+		<Project filename="lib_proj/ddisp.cbp" />
+		<Project filename="demo_proj/Disp_App/Disp_App.cbp" />
+		<Project filename="../c13/ctrl_sdk/lib/sdk_hmi.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
